@@ -2,6 +2,12 @@
 
 cs61b自学中...
 
-官网：https://sp18.datastructur.es
+project1A :ballot_box_with_check:
 
-视频：https://www.bilibili.com/video/av40629353?p=143
+project1B :ballot_box_with_check:
+
+HW 1: :ballot_box_with_check:
+
+Course website：https://sp18.datastructur.es
+
+Video：https://www.bilibili.com/video/av40629353?p=143
