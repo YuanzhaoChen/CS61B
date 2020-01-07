@@ -1,12 +1,14 @@
 # cs61b
 
-cs61b自学中...
+cs61b Data Structures 自学中...
 
- project1A:     :ballot_box_with_check:
+Project 0: NBody
 
-project1B:      :ballot_box_with_check:
+Project 1A: Data Structures  :ballot_box_with_check:
 
-HW 1:       :ballot_box_with_check:
+Project 1B: Testing and HoFS     :ballot_box_with_check:
+
+HW 1: Java Syntax and Sound Synthesis    :ballot_box_with_check:
 
 Course website：https://sp18.datastructur.es
 
