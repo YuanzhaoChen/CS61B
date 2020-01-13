@@ -1,11 +1,8 @@
 package byog.lab5;
-
 import byog.TileEngine.TERenderer;
 import byog.TileEngine.TETile;
 import byog.TileEngine.Tileset;
-
 import java.util.Random;
-
 /**
  * Draws a world that contains RANDOM tiles.
  */
@@ -43,7 +40,6 @@ public class RandomWorldDemo {
             default: return Tileset.NOTHING;
         }
     }
-
     public static void main(String[] args) {
         TERenderer ter = new TERenderer();
         ter.initialize(WIDTH, HEIGHT);

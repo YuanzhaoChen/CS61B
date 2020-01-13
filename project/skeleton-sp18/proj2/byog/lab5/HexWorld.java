@@ -99,7 +99,7 @@ public class HexWorld {
         return position;
     }
     private static TETile randomTile() {
-        int tileNum = RANDOM.nextInt(5);
+        int tileNum = RANDOM.nextInt(6);
         switch (tileNum) {
             case 0: return Tileset.WALL;
             case 1: return Tileset.FLOWER;
