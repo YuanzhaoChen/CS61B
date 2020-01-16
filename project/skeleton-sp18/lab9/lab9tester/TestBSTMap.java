@@ -87,6 +87,11 @@ public class TestBSTMap {
     }
 
     public static void main(String[] args) {
-        jh61b.junit.TestRunner.runTests(TestBSTMap.class);
+        //jh61b.junit.TestRunner.runTests(TestBSTMap.class);
+        BSTMap<String, Integer> b = new BSTMap<>();
+        b.put("toy",5);
+        b.put("odd",10);
+        b.put("world",12);
+        System.out.println("run main");
     }
 }

@@ -79,6 +79,12 @@ public class TestMyHashMap {
         MyHashMap<String, Integer> b = new MyHashMap<String, Integer>();
         b.put("hi", 1);
         assertTrue(b.containsKey("hi") && b.get("hi") != null);
+        b.put("hello", 2);
+        assertTrue(b.containsKey("hello") && b.get("hello") == 2);
+        b.put("how", 10);
+        assertTrue(b.containsKey("how") && b.get("how") == 10);
+        b.put("are", 15);
+        assertTrue(b.containsKey("are") && b.get("are") == 15);
     }
 
     /*

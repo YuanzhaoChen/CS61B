@@ -11,14 +11,14 @@ import java.util.Set;
  */
 public class MyHashMap<K, V> implements Map61B<K, V> {
 
-    private static final int DEFAULT_SIZE = 16;
+    private static final int DEFAULT_SIZE = 1;
     private static final double MAX_LF = 0.75;
 
     private ArrayMap<K, V>[] buckets;
     private int size;
 
-    private int loadFactor() {
-        return size / buckets.length;
+    private double loadFactor() {
+        return (double) size / (double) buckets.length;
     }
 
     public MyHashMap() {
@@ -53,21 +53,57 @@ public class MyHashMap<K, V> implements Map61B<K, V> {
      */
     @Override
     public V get(K key) {
-        throw new UnsupportedOperationException();
+        return buckets[hash(key)].get(key);
     }
 
     /* Associates the specified value with the specified key in this map. */
     @Override
     public void put(K key, V value) {
-        throw new UnsupportedOperationException();
+        System.out.println("load factor is: "+loadFactor());
+        if(loadFactor()>=MAX_LF){
+            resizeBuckets(2*size);
+            System.out.println("load factor after resizing: "+loadFactor());
+        }
+        int hc=hash(key);
+        if(!buckets[hc].containsKey(key)){
+            this.size+=1;
+        }
+        buckets[hc].put(key,value);
+
     }
 
     /* Returns the number of key-value mappings in this map. */
     @Override
     public int size() {
-        throw new UnsupportedOperationException();
+        return size;
     }
-
+    /*Resize buckets if the load factor exceeds MAX_LF*/
+    private void resizeBuckets(int newSize){
+        //Resizing buckets will also change existing hash code,
+        //need to rearrange their position
+        System.out.println("resizing buckets...");
+        ArrayMap<K, V>[] newBuckets=new ArrayMap[newSize];
+        ArrayMap<K,V> bigBucket=new ArrayMap<>();
+        //store everything inside BigBucket, before moving forward
+        for(int i=0;i<buckets.length;i+=1){
+            Iterator<K> iter=buckets[i].keySet().iterator();
+            while(iter.hasNext()){
+                K tmpKey=iter.next();
+                V tmpValue=buckets[i].get(tmpKey);
+                bigBucket.put(tmpKey,tmpValue);
+            }
+        }
+        //reconstruct this class,like a constructor
+        this.buckets=newBuckets;
+        clear();
+        //since keys' hashcode changes after resizing, we have to rearrange them
+        Iterator<K> iter=bigBucket.keySet().iterator();
+        while(iter.hasNext()){
+            K tmpKey=iter.next();
+            V tmpValue=bigBucket.get(tmpKey);
+            put(tmpKey,tmpValue);
+        }
+    }
     //////////////// EVERYTHING BELOW THIS LINE IS OPTIONAL ////////////////
 
     /* Returns a Set view of the keys contained in this map. */
