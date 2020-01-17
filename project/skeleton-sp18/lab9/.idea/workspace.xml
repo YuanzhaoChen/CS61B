@@ -10,19 +10,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab9/MyHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="1480">
               <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab9tester/TestMyHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
+            <state relative-caret-position="-379">
               <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
             </state>
           </provider>
@@ -80,7 +80,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579185599656" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579185967312" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -245,27 +245,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMyHashMap_functionalityTest - 2020.01.16 at 22h 27m 17s.xml">
-      <configuration name="TestMyHashMap.functionalityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 27m 48s.xml">
-      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 28m 22s.xml">
-      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 29m 10s.xml">
-      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 30m 20s.xml">
-      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 30m 49s.xml">
-      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 31m 06s.xml">
-      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 32m 21s.xml">
       <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
     </history-entry>
@@ -275,10 +254,30 @@
     <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 33m 52s.xml">
       <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestMyHashMap_sanityGenericsTest - 2020.01.16 at 22h 39m 05s.xml">
+      <configuration name="TestMyHashMap.sanityGenericsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMyHashMap_sanityClearTest - 2020.01.16 at 22h 39m 10s.xml">
+      <configuration name="TestMyHashMap.sanityClearTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMyHashMap_sanityContainsKeyTest - 2020.01.16 at 22h 39m 41s.xml">
+      <configuration name="TestMyHashMap.sanityContainsKeyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMyHashMap_sanityGetTest - 2020.01.16 at 22h 39m 45s.xml">
+      <configuration name="TestMyHashMap.sanityGetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMyHashMap_sanitySizeTest - 2020.01.16 at 22h 39m 51s.xml">
+      <configuration name="TestMyHashMap.sanitySizeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMyHashMap_sanityPutTest - 2020.01.16 at 22h 39m 56s.xml">
+      <configuration name="TestMyHashMap.sanityPutTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestMyHashMap_functionalityTest - 2020.01.16 at 22h 40m 01s.xml">
+      <configuration name="TestMyHashMap.functionalityTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -294,7 +293,7 @@
       <window_info anchor="bottom" id="Style Checker" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -356,17 +355,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab9tester/TestMyHashMap.java">
+    <entry file="file://$PROJECT_DIR$/lab9/MyHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
+        <state relative-caret-position="1480">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab9/MyHashMap.java">
+    <entry file="file://$PROJECT_DIR$/lab9tester/TestMyHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="-379">
+          <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
         </state>
       </provider>
     </entry>

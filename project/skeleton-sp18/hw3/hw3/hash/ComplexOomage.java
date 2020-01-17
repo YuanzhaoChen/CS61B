@@ -15,6 +15,7 @@ public class ComplexOomage implements Oomage {
         for (int x : params) {
             total = total * 256;
             total = total + x;
+            total %= Math.pow(10,9)+7; //add this extra line to prevent overflow
         }
         return total;
     }

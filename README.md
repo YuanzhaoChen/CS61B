@@ -18,5 +18,7 @@ Lab 5: Getting Started on Project 2		:ballot_box_with_check:
 
 HW 2: Percolation	:ballot_box_with_check:
 
-Lab 9: Tree Maps vs. Hash Maps :ballot_box_with_check: (except optinonal)
+Lab 9: Tree Maps vs. Hash Maps :ballot_box_with_check: (except optional)
+
+HW 3: Hashing   :ballot_box_with_check:
 
