@@ -22,3 +22,5 @@ Lab 9: Tree Maps vs. Hash Maps :ballot_box_with_check: (except optional)
 
 HW 3: Hashing   :ballot_box_with_check:
 
+Lab 10: Priority Queues :ballot_box_with_check: (except change priority)
+

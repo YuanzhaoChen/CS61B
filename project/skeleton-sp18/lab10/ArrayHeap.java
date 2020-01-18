@@ -27,24 +27,21 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
      * Returns the index of the node to the left of the node at i.
      */
     private static int leftIndex(int i) {
-        /* TODO: Your code here! */
-        return 0;
+        return 2*i;
     }
 
     /**
      * Returns the index of the node to the right of the node at i.
      */
     private static int rightIndex(int i) {
-        /* TODO: Your code here! */
-        return 0;
+        return 2*i+1;
     }
 
     /**
      * Returns the index of the node that is the parent of the node at i.
      */
     private static int parentIndex(int i) {
-        /* TODO: Your code here! */
-        return 0;
+        return i/2;
     }
 
     /**
@@ -107,7 +104,12 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
         // Throws an exception if index is invalid. DON'T CHANGE THIS LINE.
         validateSinkSwimArg(index);
 
-        /** TODO: Your code here. */
+        while(contents[index].priority()<contents[parentIndex(index)].priority()){
+            swap(index,parentIndex(index));
+            index=parentIndex(index);
+            if(index==1){break;}
+        }
+
         return;
     }
 
@@ -117,8 +119,29 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
     private void sink(int index) {
         // Throws an exception if index is invalid. DON'T CHANGE THIS LINE.
         validateSinkSwimArg(index);
-
-        /** TODO: Your code here. */
+        while (leftIndex(index)<=size){ //For a Heap, if a node has no left child then it has no right child either
+            if(rightIndex(index)>size){ //no right child
+                if(contents[index].priority()>contents[leftIndex(index)].priority()){
+                    swap(index,leftIndex(index));
+                    index=leftIndex(index);
+                }else{
+                    break;
+                }
+            }else{ //has both left and right child
+                double thisPriority=contents[index].priority();
+                double leftPriority=contents[leftIndex(index)].priority();
+                double rightPriority=contents[rightIndex(index)].priority();
+                if(leftPriority<rightPriority&&thisPriority>leftPriority){
+                    swap(index,leftIndex(index));
+                    index=leftIndex(index);
+                }else if(leftPriority>=rightPriority&&thisPriority>rightPriority){
+                    swap(index,rightIndex(index));
+                    index=rightIndex(index);
+                }else{
+                    break;
+                }
+            }
+        }
         return;
     }
 
@@ -132,8 +155,12 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
         if (size + 1 == contents.length) {
             resize(contents.length * 2);
         }
-
-        /* TODO: Your code here! */
+        size+=1;
+        contents[size]=new Node(item,priority);
+        if(size>1){
+            swim(size);
+        }
+        return;
     }
 
     /**
@@ -143,7 +170,7 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
     @Override
     public T peek() {
         /* TODO: Your code here! */
-        return null;
+        return contents[1].item();
     }
 
     /**
@@ -157,8 +184,12 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
      */
     @Override
     public T removeMin() {
-        /* TODO: Your code here! */
-        return null;
+        T retval=contents[1].item();
+        swap(1,size);
+        contents[size]=null;
+        size-=1;
+        sink(1);
+        return retval;
     }
 
     /**
@@ -181,6 +212,7 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
     @Override
     public void changePriority(T item, double priority) {
         /* TODO: Your code here! */
+        
         return;
     }
 
