@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a69ed6b-6698-4229-9bbe-419fed107006" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArrayHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab10/ArrayHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab10/ArrayHeap.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ArrayHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
+            <state relative-caret-position="-345">
+              <caret line="216" column="52" selection-start-line="216" selection-start-column="52" selection-end-line="216" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -79,7 +79,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579363560511" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579403999370" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -212,21 +212,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArrayHeap_testSink - 2020.01.18 at 00h 45m 14s.xml">
-      <configuration name="ArrayHeap.testSink" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArrayHeap_testInsert - 2020.01.18 at 00h 46m 24s.xml">
-      <configuration name="ArrayHeap.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArrayHeap_testInsertAndRemoveOnce - 2020.01.18 at 00h 50m 01s.xml">
-      <configuration name="ArrayHeap.testInsertAndRemoveOnce" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArrayHeap_testInsertAndRemoveOnce - 2020.01.18 at 00h 51m 28s.xml">
-      <configuration name="ArrayHeap.testInsertAndRemoveOnce" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArrayHeap_testInsertAndRemoveOnce - 2020.01.18 at 00h 55m 51s.xml">
-      <configuration name="ArrayHeap.testInsertAndRemoveOnce" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ArrayHeap - 2020.01.18 at 01h 03m 09s.xml">
       <configuration name="ArrayHeap" configurationId="JUnit" />
     </history-entry>
@@ -242,11 +227,55 @@
     <history-entry file="ArrayHeap - 2020.01.19 at 00h 00m 19s.xml">
       <configuration name="ArrayHeap" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ArrayHeap_testInsertAndRemoveAllButLast - 2020.01.19 at 00h 05m 54s.xml">
+      <configuration name="ArrayHeap.testInsertAndRemoveAllButLast" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHeap - 2020.01.19 at 00h 06m 02s.xml">
+      <configuration name="ArrayHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHeap - 2020.01.19 at 10h 54m 43s.xml">
+      <configuration name="ArrayHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHeap - 2020.01.19 at 11h 02m 40s.xml">
+      <configuration name="ArrayHeap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayHeap - 2020.01.19 at 11h 07m 21s.xml">
+      <configuration name="ArrayHeap" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info content_ui="combo" id="Project" order="4" weight="0.24959612" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info anchor="bottom" id="Style Checker" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.37534246" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
@@ -274,7 +303,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ExtrinsicPQ.java">
@@ -286,8 +315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ArrayHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
+        <state relative-caret-position="-345">
+          <caret line="216" column="52" selection-start-line="216" selection-start-column="52" selection-end-line="216" selection-end-column="52" />
         </state>
       </provider>
     </entry>

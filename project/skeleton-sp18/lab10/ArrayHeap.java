@@ -119,8 +119,8 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
     private void sink(int index) {
         // Throws an exception if index is invalid. DON'T CHANGE THIS LINE.
         validateSinkSwimArg(index);
-        while (leftIndex(index)<=size){ //For a Heap, if a node has no left child then it has no right child either
-            if(rightIndex(index)>size){ //no right child
+        while (inBounds(leftIndex(index))){ //For a Heap, if a node has no left child then it has no right child either
+            if(!inBounds(rightIndex(index))){ //no right child
                 if(contents[index].priority()>contents[leftIndex(index)].priority()){
                     swap(index,leftIndex(index));
                     index=leftIndex(index);
@@ -169,7 +169,6 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
      */
     @Override
     public T peek() {
-        /* TODO: Your code here! */
         return contents[1].item();
     }
 
@@ -184,12 +183,12 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
      */
     @Override
     public T removeMin() {
-        T retval=contents[1].item();
+        T min=contents[1].item();
         swap(1,size);
         contents[size]=null;
         size-=1;
         sink(1);
-        return retval;
+        return min;
     }
 
     /**
@@ -212,7 +211,15 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
     @Override
     public void changePriority(T item, double priority) {
         /* TODO: Your code here! */
-        
+
+        for(int index=1;index<=size;index+=1){
+            if(contents[index].item().equals(item)){
+                contents[index].myPriority=priority;
+                swim(index);
+                sink(index);
+                break;
+            }
+        }
         return;
     }
 
